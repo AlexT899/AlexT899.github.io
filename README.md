@@ -3,5 +3,5 @@
 # Алексей Тарвид
 Мои домашние задания
 
-[Урок_9](https://AlexT899.github.io/github/ "Описание")
+[Урок_9](http://AlexT899.github.io/github/ "Описание")
 
