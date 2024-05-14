@@ -3,4 +3,4 @@
 # Алексей Тарвид
 Мои домашние задания
 
-[Урок_9](https://AlexT899.github.io/lesson_9/ "Описание")
+[Урок_9](https://AlexT899.github.io/lesson_9/urok9.html "Описание")
