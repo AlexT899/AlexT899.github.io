@@ -1,0 +1,25 @@
+*{
+	box-sizing: border-box;
+}
+.feature-header {
+	font-size: 36px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 10rem	;
+}
+.img-features {
+	display: block;
+}
+.box {
+	height: 300px;
+	text-align: center;
+}
+.bee {
+	padding-top: 52px;
+}
+p {
+	padding-top: 4rem;
+}
+.hand {
+	padding-top: 45px;
+}
