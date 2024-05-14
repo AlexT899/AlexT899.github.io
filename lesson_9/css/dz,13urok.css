@@ -1,0 +1,28 @@
+
+.form {
+	padding: 30px;
+}
+.email {
+	font-weight: 900;
+	font-size: 12px;
+}
+.form-header {
+	text-align: center;
+	background-color: #01b3b3;
+ width: 150px;
+	border: solid 2px #01b3b3;
+	color: white;
+}
+.form input {
+	width: 260px;
+	height: 30px;
+	background-color: #ebf4f4;
+}
+.button {
+padding-left: 30px;
+}
+.btn-primary{
+	background-color: #01bbbb;
+	width: 260px;
+	height: 45px;
+}
