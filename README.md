@@ -4,6 +4,7 @@ AlexT899.github.io/lesson_13
 # Алексей Тарвид
 Мои домашние задания
 
-[Урок_9](https://AlexT899.github.io/lesson_9/urok9.html "Описание")
+[Модуль-5-Практика-1](https://AlexT899.github.io/modul-5-praktika-1
+/MODUL-5-PRAKTIKA-1.HTML "Описание")
 
-[Урок_13](https://AlexT899.github.io/lesson_13/домашка.урок13.html "Описание")
+
