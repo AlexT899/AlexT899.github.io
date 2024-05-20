@@ -1,5 +1,4 @@
-AlexT899.github.io/modul-5-praktika-2
-/MODUL-5-PRAKTIKA-2.html
+
 
 
 # Алексей Тарвид
