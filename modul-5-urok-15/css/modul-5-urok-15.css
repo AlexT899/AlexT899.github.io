@@ -1,0 +1,30 @@
+
+img {
+		
+	vertical-align: left;
+	
+}
+img:hover {
+	filter: brightness(30%);
+}
+button {
+	margin-top: 1rem	;
+	display: block;
+}
+.button-one {
+	border: none;
+	color: white;
+	background-color: blue;
+}
+.button-one:hover {
+	background: red;
+}
+.button-two {
+	margin-top: 1rem	;
+	border: none;
+	color: white;
+	background-color: purple;
+}
+.button-two:hover{
+	background: green;
+}
