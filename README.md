@@ -12,5 +12,5 @@
 
 [Модуль-5-Практика-3](https://AlexT899.github.io/modul-5-praktika-3/MODUL-5-PRAKTIKA-3.html "Добавил Эффекты кнопок+ Адапитвная вёрстка")
 
-
+[Модуль-5-Урок-16](https://AlexT899.github.io/modul-5-urok-16/modul-5-urok-16.html "Добавил Слайдер")
 
