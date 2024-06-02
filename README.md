@@ -1,5 +1,4 @@
-AlexT899.github.io/modul-5-praktika-4
-/MODUL-5-PRAKTIKA-4.html
+
 # Алексей Тарвид
 Мои домашние задания
 
