@@ -15,4 +15,4 @@ AlexT899.github.io/modul-5-praktika-4
 
 [Модуль-5-Урок-16](https://AlexT899.github.io/modul-5-urok-16/modul-5-urok-16.html "Добавил Слайдер")
 
-[Модуль-5-Практика-3](AlexT899.github.io/modul-5-praktika-4/MODUL-5-PRAKTIKA-4.html " Слайдер")
+[Модуль-5-Практика-4](AlexT899.github.io/modul-5-praktika-4/MODUL-5-PRAKTIKA-4.html " Слайдер")
