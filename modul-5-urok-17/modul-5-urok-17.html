@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/modul-5-urok-17.css">
+</head>
+<body>
+	<div class="container">
+		<a class="link" href="#my-modal" data-toggle="modal">Ссылка на модальное окно</a>
+		<button class="btn btn-success" data-toggle="modal" data-target="#my-modal">Кнопка вызова модального окна</button>
+	</div>
+	<!-- Модальное окно от bootstrap -->
+	<div class="modal fade" id="my-modal" >
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Delete file</h4>
+      </div>
+      <div class="modal-body">
+        <h3>Вы действительно хотите удалить файл?</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Да</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Нет</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+</html>
