@@ -1,0 +1,16 @@
+a {
+	display: inline-block;
+	margin: 20px;
+}
+img {
+	width: 100%;
+}
+.modal-header {
+	background-color:red;
+}
+h4 {
+	color: white;
+}
+.modal-footer {
+	background-color: #ccc;
+}
