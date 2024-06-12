@@ -1,0 +1,59 @@
+
+.header	{
+ margin: 60px auto;
+	font-size: 20px;
+	line-height: 1.5;
+}
+.header span {
+	display: block;
+}
+.section {
+	padding: 30px 0;
+}
+.container	{
+	/*border: 2px solid red;*/
+}
+.form {
+	border: 5px solid #2727d9;
+	padding: 30px 20px;
+}
+.form-header {
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: 900;
+}
+.form input {
+	padding: 20px;
+	margin-bottom: 14px;
+}
+.form-btn, .feature-btn {
+	background-color: #2727d9;
+	margin: 14px auto;
+}
+.section-header {
+	font-weight: 900;
+	font-size: 24px;
+}
+.feature {
+	margin: 60px auto;
+}
+.feature p {
+	margin-top: 20px;
+}
+.video {
+	margin-bottom: 30px;
+}
+.feature-box {
+	height: 160px;
+}
+.section-header2 {
+	font-weight: 900;
+	font-size: 24px;
+}
+.customers-box {
+ margin-bottom:  50px;
+	padding: 10px auto;
+}
+.one,.two, .three, .four, .five, .six, .seven, .eigth{
+	margin: 5px auto;
+}
