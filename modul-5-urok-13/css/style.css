@@ -1,0 +1,46 @@
+
+body {
+	background-color: #ebf4f4;
+	font-family: Arial, sans-serif;
+margin: 100px 500px;
+}
+.account-btn {
+position: absolute;
+left: 40%;
+transform: translateX(-140%) translateY(-220%);
+height: 30px;
+border: none;
+color: #fff;
+background-color: #01b3b3;
+margin-top: 50px;
+text-transform: uppercase;
+}
+.form {
+	width: 285px;
+	background-color: #fbfdfd;
+	padding: 12px;
+}
+input {
+	padding: 10px;
+	height: 30px;
+	width: 260px;
+	border: none;
+	background-color: #ebf4f4;
+	margin-top: 5px;
+display: block;
+}
+p {
+	margin-top: 10px;
+	font-size: 12px;
+	font-weight: 700;
+}
+.register {
+	font-weight: 700;
+	font-size: 16px;
+	border: none;
+	height: 45px;
+	width: 260px;
+	margin-top: 20px;
+	color: #fff;
+	background-color: #01b3b3;
+}
