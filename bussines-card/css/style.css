@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  padding: 15px;
+  background-color: #f5f5f5; /* Фоновый цвет*/
+}
+.page-wraper {
+  overflow: hidden;
+  max-width: 375px;
+  margin: auto;
+  background: #f5f5f5;
+  box-shadow: 0px  0px 30px rgba(128, 127, 127, 0.25);
+  border-radius: 20px;
+}
+.container {
+  max-width: 300px;
+  margin: auto;
+}
+.header {
+  color: #fff;
+  padding: 40px 42px 145px;
+  background:  linear-gradient(0deg, rgba(58, 58, 58, 0.6), rgba(58, 58, 58, 0.6)), url('../img/header-bg.png') no-repeat center / cover;
+  border-radius:0px 0px 90px 90px;
+}
+.hello {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+.hello-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  }
+  .user {
+  margin-top: -79px;  
+  text-align: center;
+  background: #f5f5f5;
+  box-shadow: 0px  4px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding-bottom: 20px;
+  }
+.user-avatar {
+  margin-top: -58px;
+  border-radius:50%;
+  object-fit: cover;
+  border: 4px solid #fffefe;
+}
+.user-name {
+  margin-top: 8px;
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.user-description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color:#6a6a6a;
+  margin-top: 4px;
+}
+.card {
+  background: #D9D9D9;
+  box-shadow: 0px  4px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 20px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 260px;
+  margin: auto;
+  gap: 10px;
+  
+}
+.button {
+  font-size: 16px;
+  line-height: 15px;
+  color:#000000;
+  text-decoration: none;
+  border-radius:10px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  flex-shrink: 1;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.button.vb {
+background: #7360F2;
+}
+.button.tg {
+  background: #24A1DE;
+}
+.button.wt {
+  background: #25D366;
+}
+.button.gt {
+  background: #F9CE32;
+}
+.offers {
+  text-align: center;
+}
