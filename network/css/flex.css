@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+.block {
+  display: flex;
+  
+  background-color: grey;
+  padding: 10px;
+  height: 400px;
+  /* Выравнивание по главной оси */
+
+  /* Выравнивание по второстепенной оси */
+  align-items: flex-start;
+}
+.item {
+  width: 50%;
+  border: 1px solid;
+  background-color: tomato;
+  padding: 5px;
+}
+.item-3 {
+  flex-shrink: 0.1;
+}
