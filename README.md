@@ -10,3 +10,5 @@
 [Header Aliance Production](https://AlexT899.github.io/Alliance/alliance.html "Сайт Aliance Production")
 
 [Блок с шагами + шапка Aliance Production](https://AlexT899.github.io/Alliance/index.html "Сайт Aliance Production")
+
+[Фиксим шапку и SVG Aliance Production](https://AlexT899.github.io/Alliance/index.html "Сайт Aliance Production")
