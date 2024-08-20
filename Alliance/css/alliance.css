@@ -17,20 +17,33 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  position: relative;
-  height: 94px;   
   color:#fff;
+  height: 94px;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  left: 0;
+  top: 0;   
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+  transition: background-color 0.2s;
 }
+.navbar-light {
+  background-color: #fff;
+  color:#292d33;
+}
+.navbar-light .header-logo-path {
+  fill:#292D33;
+}/* Позволяет перекрасить лого*/
 .header {
+  padding: 94px;
   min-height: 100vh;
 }
 .header-image {
-  position: relative;
   background-image: url(../img/bg.jpeg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center ;
+  position: relative;
 }
 .header-image::before {
   content:"";
@@ -137,3 +150,70 @@ border:1px solid rgba(235, 235, 240, 0.2);
 .header-features-item:not(:last-child) {
   border-right:none;
 } /* Убирает border для всех кроме последнего*/
+.section {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.section-title {
+  font-family: "BebasNeue";
+  font-size: 60px;
+  line-height: 120%; 
+  color:#292D33;
+}
+.steps {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 30px;
+}
+.steps-item {
+  max-width: 330px;
+}
+.steps-num {
+  font-family: "BebasNeue";
+  font-size: 48px;
+  line-height: 120%;
+  color: #5C8EE5;
+  display: flex;
+  align-items: center;
+}/* Если добавить display-flex и align-items: center; полоска становится по центру */
+.steps-num:after {
+  content:"";
+  height: 1px;
+  background: #ebebf0;
+  width: 100%;
+  display: inline-block;
+  margin-left: 30px;
+}
+.steps-title {
+font-size: 28px;
+font-weight: 400;
+line-height: 160%;
+color :#292d33;
+margin-top: 30px;
+margin-bottom: 10px;
+}
+.steps-text {
+font-size: 16px;
+font-weight: 400;
+line-height: 160%;
+color:#828A99;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+.steps-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  color:#5C8EE6;
+}
+.steps-link::before {
+  content:"";
+  height: 1px;
+  background: #5C8EE6;
+  width: 40px;
+  margin-right: 20px;
+}
