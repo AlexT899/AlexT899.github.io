@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'BebasNeueBook';;
+    src: url('../fonts/BebasNeueBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  color:#fff;
+  height: 94px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index:2;
+  border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+  transition: background-color 0.2s ,height 0.2s ;
+}
+.navbar-light {
+  background-color: #fff;
+  color:#292D33;
+  height: 72px;
+}
+.navbar-light .header-logo-path {
+  fill: #292D33;
+}
+.header {
+  padding-top: 94px;
+  min-height: 100vh;
+}
+.header-image {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left -7px;
+  position: relative;
+} 
+.header-image::after {
+  content:"";
+  position: absolute;
+  background: rgba(41, 45, 51, 0.75);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  border-right:1px solid rgba(235, 235, 240, 0.2);
+  height: 100%;
+}
+.header-nav {
+  flex-basis: 100%;
+  display: flex;
+  list-style: none;
+  padding: 0 51px;
+  margin: 0;	
+}
+
+.header-nav-link {
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 50px;
+  color:inherit;
+  padding-left: 2.3px;
+}
+.header-phone {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 49px;
+}
+.header-phone-link {
+  text-decoration: none;
+  font-size: 16px;
+  color:inherit;
+}
+.button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  color:#fff;
+  background: #3A71D1;
+  padding: 25px 60px;
+  border:none;
+  display: inline-block;
+  cursor: pointer;
+}
+.navbar-button {
+  flex-shrink: 0;
+  height: 100%;
+  padding: 25px 45px;
+}
+.separator {
+  width: 150px;
+  height: 2px;
+  background: #5C8EE5;
+}
+.header-content {
+  padding-top: 150px;
+  position: relative;
+  z-index: 1;
+  color:#fff;
+}
+.header-title {
+  max-width: 1080px;
+  font-family: "BebasNeueBook", sans-serif;
+  font-size: 80px;
+  line-height: 120%;
+  margin: 22px 9px 39px 6px;
+  letter-spacing: 0.8px;
+  word-spacing: -1.6px;
+}
+.header-text {
+  max-width: 720px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  margin-bottom: 50px;
+  margin-left: 7px;
+  word-spacing:1.7px;
+}
+.header-features {
+  display: flex;
+  min-height:168px;
+  padding: 0;
+  margin-top: 101px;
+  list-style: none;
+  color:#fff;
+  position: relative;
+  z-index: 1;
+  margin-left: 8px;
+}
+.header-features-item {
+  padding: 30px 50.3px;
+  width: 288px;
+  border:1px solid  rgba(235, 235, 240, 0.2);
+}
+.header-features-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  margin-bottom: 0;
+  margin-left: 2.7px;
+}
+.header-button {
+  padding: 25px 62px;
+  margin-left: 6.9px;
+}
+.header-features-item:not(:last-child) {
+  border-right:none;
+}
+.section {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.section-title {
+  font-family: "BebasNeueBook", sans-serif;
+  font-size: 60px;
+  line-height: 120%;
+  color: #292D33;
+  margin-left: 10px;
+  margin-top: 24px;
+}
+.steps {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 30px;
+  margin-left: 9px;
+}
+.steps-item {
+  max-width: 330px;
+}
+.steps-num {
+  font-family: "BebasNeueBook", sans-serif;
+  font-size: 48px;
+  line-height: 120%;
+  color: #5C8EE5;
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+}
+.steps-num::after {
+  content: '';
+  height: 1px;
+  background: #EBEBF0;
+  width: 100%;
+  margin-left: 30px;
+}
+.steps-title {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 160%;
+  color: #292D33;
+  margin-top: 35px;
+  margin-bottom: 11px;
+}
+.steps-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height:160%;
+  color: #828A99;
+  margin-top: 10px;
+  margin-bottom: 21px;
+  margin-left: 1.6px;
+}
+.steps-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  color: #5C8EE5;
+  margin-left: 1px;
+}
+.steps-link:before {
+  content: '';
+  height: 1px;
+  background: #5C8EE5;
+  width: 40px;
+  margin-right: 20px;
+}
