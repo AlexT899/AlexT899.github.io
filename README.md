@@ -1,10 +1,6 @@
 # Алексей Тарвид
 Мой первый сайт
 
-AlexT899.github.io/ScreenAdaptation-aliance
-/index.html
-
-
 [Сайт Визитка](https://AlexT899.github.io/bussines-card/index.html "Сайт Визитка")
 
 [Сайт Network](https://AlexT899.github.io/network/network.html "Сайт Network")
@@ -20,3 +16,5 @@ AlexT899.github.io/ScreenAdaptation-aliance
 [PixelPerfect Aliance Production](https://AlexT899.github.io/pixelperfect/index.html "Сайт Aliance Production")
 
 [Адаптация Экрана Aliance Production](https://AlexT899.github.io/ScreenAdaptation-aliance/index.html "Сайт Aliance Production Адаптация")
+
+[Шапка.Адаптация Aliance Production](https://AlexT899.github.io/Шапка.Адаптация/index.html "Сайт Aliance Production Шапка.Адаптация")
