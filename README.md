@@ -21,4 +21,4 @@
 
 [JS_переключение_меню Aliance Production](https://AlexT899.github.io/JS_переключение_меню/index.html "Сайт Aliance Production JS_переключение_меню")
 
-[Адаптив главного экрана и слайдер Aliance Production](https://AlexT899.github.io/home_screen_adaption_and_slider/index.html "Сайт Aliance Production Адаптив главного экрана и слайдер")
+
