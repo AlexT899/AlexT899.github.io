@@ -25,4 +25,4 @@
 
 [Validator_Проверка_на_прочность Aliance Production](https://AlexT899.github.io/Validator_Проверка_на_прочность/index.html "Сайт Aliance Production Validator_Проверка_на_прочность")
 
-[Hover-эффекты Aliance Production](https://AlexT899.github.io/Hover-эффекты/index.html_Проверка_на_прочность/index.html "Сайт Aliance Production Hover-эффекты")
+[Hover-эффекты Aliance Production](https://AlexT899.github.io/Hover-эффекты/index.html "Сайт Aliance Production Hover-эффекты")
