@@ -1,8 +1,6 @@
 # Алексей Тарвид
 Мой первый сайт
 
-AlexT899.github.io/Мобильный_адаптив/index.html
-
 [Сайт Визитка](https://AlexT899.github.io/bussines-card/index.html "Сайт Визитка")
 
 [Сайт Network](https://AlexT899.github.io/network/network.html "Сайт Network")
