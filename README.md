@@ -29,4 +29,4 @@
 
 [Мобильный_адаптив Aliance Production](https://AlexT899.github.io/Мобильный_адаптив/index.html "Сайт Aliance Production Мобильный_адаптив")
 
-[Мобильный_адаптив Aliance Production](https://AlexT899.github.io/CSS_Grid для_карточек/index.html "Сайт Aliance ProductionCSS Grid для карточек")
+[Мобильный_адаптив Aliance Production](https://AlexT899.github.io/CSS_Grid_для_карточек/index.html "Сайт Aliance ProductionCSS Grid для карточек")
