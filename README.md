@@ -32,3 +32,5 @@
 [CSS Grid для карточек Aliance Production](https://AlexT899.github.io/CSS_Grid_для_карточек/index.html "Сайт Aliance Production CSS Grid для карточек")
 
 [Основатель и клиенты Aliance Production](https://AlexT899.github.io/Основатель_и_клиенты/index.html "Сайт Aliance Production Основатель и клиенты")
+
+[Раздел с блогом Aliance Production](https://AlexT899.github.io/Основатель_и_клиенты/index.html "Сайт Aliance Production Раздел с блогом")
