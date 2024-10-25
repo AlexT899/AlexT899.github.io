@@ -33,4 +33,4 @@
 
 [Основатель и клиенты Aliance Production](https://AlexT899.github.io/Основатель_и_клиенты/index.html "Сайт Aliance Production Основатель и клиенты")
 
-[Раздел с блогом Aliance Production](https://AlexT899.github.io/Основатель_и_клиенты/index.html "Сайт Aliance Production Раздел с блогом")
+[Раздел с блогом Aliance Production](https://AlexT899.github.io/Раздел_с_блогом/index.html "Сайт Aliance Production Раздел с блогом")
