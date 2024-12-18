@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  color: #050038;
+  height: 91px;
+  border-bottom :1px solid  #F0F0F0;
+  margin-bottom: 58px;
+  margin-right: 1px;
+}
+.navbar-logo {
+  height: 100%;
+  border-right :1px solid  #F0F0F0;
+  padding: 24px;
+  margin-left: -4px;
+}
+.header-nav {
+  flex-basis: 100%;
+  list-style: none;
+  display: flex;
+  padding: 0 50px;
+  margin: -47px;
+}
+.header-nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: #050038;
+  margin-right: 38px;
+}
+.header-phone{
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  margin-right: 88px;
+  text-decoration: none;
+}
+.header-button {
+  color:#fff;
+  width: 220px;
+  height: 50px;
+  margin-right: 20px;
+  font-size: 16px;
+  border-radius: 40px;
+  border: 1px solid #4262FF;
+  background: #4262FF;
+  cursor: pointer;
+}
+.header-button:hover {
+  background-color: #2b189b;
+}
+.header-title {
+ font-size: 48px;
+ font-weight: 400;
+ line-height: 56px;
+ letter-spacing: 1px;
+}
+.header-text {
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+}
+.free-button {
+    color:#fff;
+    width: 440px;
+    height: 51px;
+    margin-right: 20px;
+    font-size: 16px;
+    border-radius: 40px;
+    border: 1px solid #4262FF;
+    background: #4262FF;
+    cursor: pointer;
+    margin-bottom: 8px;
+  }
+  .free-button:hover {
+    background-color: #2b189b;
+  }
+  .header-input {
+    display: flex;
+    border: 1px solid #9B99AF;
+    height: 48px;
+    width: 440px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    margin-top: 55px;
+  }
+.header-bg {
+  float: right;
+}
+.header-free-text {
+ text-decoration: none;
+ color: #050038;
+ font-size: 14px;
+ font-weight: 400;
+ line-height: 20px;
+ margin-bottom: 52px;
+}
+.users {
+  display: flex; 
+}
+.users-text {
+ margin-top: 15px;
+}
+.users-icon {
+  display: flex;
+  margin-top: 8px;
+  margin-right: 19px;
+  margin-left: 19px;
+}
+.work-header-content  {
+  position: relative;
+ 
+}
+.work-header-title {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 1px;
+  margin-top: 155px;
+  margin-bottom: 19px;
+ }
+ .work-header-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #05003899;
+  margin: 0 0 39px 0;
+  }
+  .work-header-bg {
+    float: right;
+    margin-top: 75px;
+
+  }
+  .work-header-link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #4262FF;
+  }
+  .work-header-link:hover {
+    color:rgb(39, 4, 167);
+    font-size: 20px;
+    transition: font-size 0.2s;
+  }
+  .tabs-header-bg {
+    position: relative;
+    float: left;
+    margin-right: 115px;
+  }
+  .section-tabs {
+    margin-top: 90px;
+  }
+  .tabs-content {
+    margin-top: 140px;
+  }
+  .tabs-header-title {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 1px;
+    color: #050038;
+  }
+  .tabs-header-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #05003899;
+  }
+  .section-work-style {
+    margin-top: 200px;
+  }
+  .work-style-link {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+  .style-link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #F2F2F2;;
+    border-radius:24px;
+    height: 48px;
+    width: 163px;
+    color: #050038;
+    background-color: #F2F2F2;
+    cursor: pointer;
+  }
+  .style-link:hover {
+    background-color: #F1F3FD;
+    transition:  background-color 0.2s;
+  }
+  .style-title {
+    margin-top: 56px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #050038;
+  }
+  .style-text {
+    margin-top: 25px;
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #050038;
+  }
+  .style-header-bg {
+    float: right;
+    margin-top: 26px;
+  }
+  .style-header-link {
+    margin-top: 39px;
+  }
+  .section-team-style {
+    margin-top: 300px;
+  }
+  .team-style {
+    display: flex;
+    gap: 20px;
+  }
+  .style-content {
+    margin-top: 56px;
+  }
+  .team-header-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #05003899;
+  }
+  .team-header-bg {
+    float: right;
+    margin-top: 26px;
+  }
