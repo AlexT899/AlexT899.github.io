@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/main.css">
+        <title>Mum'S Shop</title></head>
+    <body>
+        <nav class="navbar">
+            <a href="#" class="mobile-menu-toggle">
+              <div class="mobile-menu-line"></div>
+              <div class="mobile-menu-line"></div>
+              <div class="mobile-menu-line"></div>
+            </a>
+            <!-- /.mobile-menu-toggle -->
+            <label id="logo"  class="header-logo companyName" >
+             Mum'S Shop
+            </label>
+            <ul class="header-nav">
+              <li class="header-nav-item">
+                <label id="home"  class="header-nav-link navs" style="padding-right:5px;border-right:0.5px solid rgba(38, 125, 73, 0.177);">Home</label>
+              </li>
+              <li class="header-nav-item">
+                <label id="shop" style="padding-right:8px;border-right:0.5px solid rgba(38, 125, 73, 0.177);" class="header-nav-link navs">Shop</label>
+              </li>
+              <li class="header-nav-item">
+                <label id="features" style="padding-right:8px;border-right:0.5px solid rgba(38, 125, 73, 0.177);"  class="header-nav-link navs">Features</label>
+              </li>
+              <li class="header-nav-item">
+                <label id="contact"  class="header-nav-link navs">Contact</label>
+              </li>
+            </ul>
+            <div id="userInfo">
+                <div id="del">
+                <button id="signIn" class="buttons">Sign In</button>
+                <button id="signUp"class="buttons">Sign Up</button>
+                <div id="signUpDiv" style="display:none;" class="modal">
+                    <label class="fonts">Enter your email:</label>
+                    <input id="email"></input><br>
+                    <label class="fonts">Name:</label>
+                    <input id="name"></input><br>
+                    <label class="fonts">Last Name:</label>
+                    <input id="last"></input><br>
+                    <label class="fonts">Phone Number:</label>
+                    <input id="phone"></input><br>
+                    <button id="submit">Submit</button>
+                    <button id="back">Cancel</button>
+                </div>
+            </div>
+          </nav>
+          <!-- /.navbar -->
+       <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="header-title">Discover and<br>Find Your Own <br>Fashion!</h1>
+                <p class="header-text">
+                    Explore our curated collection of stylish <br> clothing tailored  to your unique taste.
+                </p>
+                <button class="header-button">
+                    <p class="button-text">Explore now</p>
+                </button>
+            </div>
+            <!-- /.header-content -->
+             <div class="collection-sample">
+                <img src="" alt="Space for photo" class="colection-photo">
+             </div>
+        </div>
+        <!-- /.container -->
+       </header>
+       <!-- /.header -->
+    </body>
+    <script>
+        let userE=false;
+        document.getElementById("logo").addEventListener("click",sendTo);
+        //href="/about.html"
+        document.getElementById("home").addEventListener("click",about);
+        document.getElementById("shop").addEventListener("click",shop);
+        document.getElementById("features").addEventListener("click",feat);
+        document.getElementById("contact").addEventListener("click",cont);
+        function cont()
+        {
+            window.alert("Your on the contact page");
+            window.location.href="#";
+        }
+        function feat()
+        {
+            window.location.href="#";
+            window.alert("Your on the features page");
+        }
+        function shop()
+        {
+            window.alert("Your on the shop page");
+            window.location.href="#";
+        }
+        function about()
+        {
+            window.alert("Your on the about page");
+            window.location.href="/about.html";
+            //remember to change this code once running on a server (very important)
+        }
+        function sendTo()
+        {
+            //window.location.href="";
+            //Will write the redirect code here
+            window.alert("You have been redirected to Mum's shop home page");
+        }
+      let user=new Object();
+        document.getElementById('signUp').addEventListener("click",display);
+        document.getElementById('back').addEventListener("click",noDisplay);
+        document.getElementById('submit').addEventListener("click",checkData);
+        function updateInfo()
+        {
+            let del=document.getElementById("del");
+            del.remove();
+            let name=document.createElement("label");
+            name.id="name";
+            name.setAttribute("class","userSet");
+            name.innerHTML=user.First+" "+user.Last;
+            document.getElementById("userInfo").appendChild(name);
+        }
+        
+        function display()
+        {
+            document.getElementById("signUpDiv").setAttribute("style","display:block;");
+        }
+            
+        function noDisplay()
+        {
+            document.getElementById("modal").setAttribute("style","display:none; background-color:rgba(0,0,0,0.5); position:fixed; z-index:1;");
+        }
+        async function checkData()
+        {
+            let key=[false,false,false];
+            let alpha=" abcdefghijklmnoprstuvwxyz"
+            // email last name phone
+            let last=document.getElementById("last").value;
+            
+            let lastE=last.toLowerCase();
+            let c1=0;
+            if(last=="")
+            {
+                key[2]=false;
+                document.getElementById("last").value="Enter your name";
+                console.log("Blank name");
+            }
+            else
+            {
+                let subKey=false;
+                
+                for(let i=0;i<last.length;i++)
+                {
+                    let str=lastE.substr(i,1);
+                    let d=alpha.length;
+                    for(let y=0;y<d;y++)
+                    {
+                        let strA=alpha.substr(y,1);
+                       
+                        if(str==strA)
+                        {
+                            c1++;
+                        }
+                    }
+                }
+                if(c1!=last.length)
+                {
+                    document.getElementById("last").value="Invalid";
+                    let d=last.length-1;
+                }
+                else
+                {
+                    user.Last=document.getElementById("last").value
+                    key[2]=true;
+                }
+            }
+            let name=document.getElementById("name").value;
+            let nameE=name.toLowerCase();
+            let c=0;
+            if(name=="")
+            {
+                key[1]=false;
+                document.getElementById("name").value="Enter your name";
+                console.log("Blank name");
+            }
+            else
+            {
+                let subKey=false;
+                
+                for(let i=0;i<name.length;i++)
+                {
+                    let str=nameE.substr(i,1);
+                    let d=alpha.length;
+                    for(let y=0;y<d;y++)
+                    {
+                        let strA=alpha.substr(y,1);
+                       
+                        if(str==strA)
+                        {
+                            c++;
+                        }
+                    }
+                }
+                if(c!=name.length)
+                {
+                    document.getElementById("name").value="Invalid";
+                    let d=name.length-1;
+                    console.log(c+" "+d);
+                }
+                else
+                {
+                    user.First=document.getElementById("name").value
+                    key[1]=true;
+                }
+            }
+            let email=document.getElementById("email").value;
+            let at=email.indexOf("@");
+            
+            if(email=="")
+            {
+                document.getElementById("email").value="Please enter your email";
+                key[0]=false;
+                
+            }
+            else
+            {
+                key[0]=true;
+            }
+            if(at==-1 && email!="")
+            {
+                key[0]=false;
+                document.getElementById("email").value="Invalid";
+            }
+            else
+            {
+                key[0]=true;
+            }
+            if(key[0]==true)
+            {
+                console.log("Email correct");
+                user.Email=email;
+            }
+            else
+            {
+                console.log("Email incorrect");
+                
+            }
+            console.log(at+" "+email);
+            let masterKey=false;
+            let y=0;
+            for(let i=0;i<key.length;i++)
+            {
+                if(key[i]==false)
+                {
+                    y++;
+                    console.log(i+" incorrect cell");
+                }
+            }
+            if(y==0)
+            {
+                window.alert("Entered server "+user.First);
+                window.alert("Updating user info on site");
+                /*const userD="http://localhost:4010/sendUser";
+                const res=await fetch(userD,
+                {
+                    method:"POST",
+                    headers:{
+                        "Content-Type":"application/json"
+
+                    },
+                    body:JSON.stringify(
+                    {
+                        Email:user.Email,
+                        First:user.First,
+                        Last:user.Last,    
+                    })
+
+                });
+                const data=await res.json();*/
+                updateInfo();
+            }
+            else{console.log("Failed to enter server");}
+        }
+
+
+
+
+        
+    </script>
+</html>
