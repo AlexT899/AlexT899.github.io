@@ -11,38 +11,40 @@
               <div class="mobile-menu-line"></div>
             </a>
             <!-- /.mobile-menu-toggle -->
-            <a href="./" class="header-logo">
+            <label id="logo"  class="header-logo companyName" >
              Mum'S Shop
-            </a>
+            </label>
             <ul class="header-nav">
               <li class="header-nav-item">
-                <a href="/about.html" class="header-nav-link">Home</a>
+                <label id="home"  class="header-nav-link navs" style="padding-right:5px;border-right:0.5px solid rgba(38, 125, 73, 0.177);">Home</label>
               </li>
               <li class="header-nav-item">
-                <a href="#" class="header-nav-link">Shop</a>
+                <label id="shop" style="padding-right:8px;border-right:0.5px solid rgba(38, 125, 73, 0.177);" class="header-nav-link navs">Shop</label>
               </li>
               <li class="header-nav-item">
-                <a href="#" class="header-nav-link">Features</a>
+                <label id="features" style="padding-right:8px;border-right:0.5px solid rgba(38, 125, 73, 0.177);"  class="header-nav-link navs">Features</label>
               </li>
               <li class="header-nav-item">
-                <a href="#" class="header-nav-link">Contact</a>
+                <label id="contact"  class="header-nav-link navs">Contact</label>
               </li>
             </ul>
-            <div>
-                <button id="signIn">Sign In</button>
-                <button id="signUp">Sign Up</button>
-                <div id="modal" style="display:none">
-                    <label>Enter your email:</label>
+            <div id="userInfo">
+                <div id="del">
+                <button id="signIn" class="buttons">Sign In</button>
+                <button id="signUp"class="buttons">Sign Up</button>
+                <div id="signUpDiv" style="display:none;" class="modal">
+                    <label class="fonts">Enter your email:</label>
                     <input id="email"></input><br>
-                    <label>Name:</label>
+                    <label class="fonts">Name:</label>
                     <input id="name"></input><br>
-                    <label>Last Name:</label>
+                    <label class="fonts">Last Name:</label>
                     <input id="last"></input><br>
-                    <label>Phone Number:</label>
+                    <label class="fonts">Phone Number:</label>
                     <input id="phone"></input><br>
                     <button id="submit">Submit</button>
                     <button id="back">Cancel</button>
                 </div>
+            </div>
           </nav>
           <!-- /.navbar -->
        <header class="header">
@@ -66,14 +68,60 @@
        <!-- /.header -->
     </body>
     <script>
+        let userE=false;
+        document.getElementById("logo").addEventListener("click",sendTo);
+        //href="/about.html"
+        document.getElementById("home").addEventListener("click",about);
+        document.getElementById("shop").addEventListener("click",shop);
+        document.getElementById("features").addEventListener("click",feat);
+        document.getElementById("contact").addEventListener("click",cont);
+        function cont()
+        {
+            window.alert("Your on the contact page");
+            window.location.href="#";
+        }
+        function feat()
+        {
+            window.location.href="#";
+            window.alert("Your on the features page");
+        }
+        function shop()
+        {
+            window.alert("Your on the shop page");
+            window.location.href="#";
+        }
+        function about()
+        {
+            window.alert("Your on the about page");
+            window.location.href="/about.html";
+            //remember to change this code once running on a server (very important)
+        }
+        function sendTo()
+        {
+            //window.location.href="";
+            //Will write the redirect code here
+            window.alert("You have been redirected to Mum's shop home page");
+        }
       let user=new Object();
         document.getElementById('signUp').addEventListener("click",display);
         document.getElementById('back').addEventListener("click",noDisplay);
         document.getElementById('submit').addEventListener("click",checkData);
+        function updateInfo()
+        {
+            let del=document.getElementById("del");
+            del.remove();
+            let name=document.createElement("label");
+            name.id="name";
+            name.setAttribute("class","userSet");
+            name.innerHTML=user.First+" "+user.Last;
+            document.getElementById("userInfo").appendChild(name);
+        }
+        
         function display()
         {
-            document.getElementById("modal").setAttribute("style","display:block; background-color:rgba(0,0,0,0.5); position:fixed; z-index:1;");
+            document.getElementById("signUpDiv").setAttribute("style","display:block;");
         }
+            
         function noDisplay()
         {
             document.getElementById("modal").setAttribute("style","display:none; background-color:rgba(0,0,0,0.5); position:fixed; z-index:1;");
@@ -206,8 +254,9 @@
             }
             if(y==0)
             {
-                console.log("Entered server");
-                const userD="http://localhost:4010/sendUser";
+                window.alert("Entered server "+user.First);
+                window.alert("Updating user info on site");
+                /*const userD="http://localhost:4010/sendUser";
                 const res=await fetch(userD,
                 {
                     method:"POST",
@@ -223,7 +272,8 @@
                     })
 
                 });
-                const data=await res.json();
+                const data=await res.json();*/
+                updateInfo();
             }
             else{console.log("Failed to enter server");}
         }
@@ -231,63 +281,6 @@
 
 
 
-        //You can delete all the script 
-        let welcome=document.getElementById("Welcome");
-        let x;
-        let b=0;
-        let r=0;
-        let next=false;
-        let font=0;
-        let x1;
-        let xS=false;
-        let xS1=false;
-        function fontSize()
-        {
-            console.log("Font Size");
-            if(font<=120 && xS==false)
-            {
-                font=font+1;
-                if(font==120)
-                {
-                    xS=true;
-                }
-            }
-            if(font<=120 && font>=80 && xS==true)
-            {
-                font=font-1;
-                if(font==80)
-                {
-                    xS1=true;
-                    clearInterval(x1);
-                    x=setInterval(glow,50);
-                }
-            }
-            
-            welcome.setAttribute("style","font-weight:bolder;font-size:"+font.toString()+"px; font-family:fantasy; color:rgb("+r.toString()+",0,"+b.toString()+");");
-        }
-        x1=setInterval(fontSize,10);
-        function glow()
-        {
-            if(b<=255 && next==false)
-            {
-                b=b+5;
-                r=r+3;
-                if(b>=255)
-                {
-                    next=true;
-                }
-            }
-            if(b>=0 && next==true)
-            {
-                b=b-5;
-                r=r-1;
-                if(b<=0)
-                {
-                    next=false;
-                }
-            }
-            welcome.setAttribute("style","font-weight:bolder;font-size:80px; font-family:fantasy; color:rgb("+r.toString()+",0,"+b.toString()+");");
-        }
         
     </script>
 </html>
