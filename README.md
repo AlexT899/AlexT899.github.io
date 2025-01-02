@@ -12,4 +12,4 @@ My Works
 
 [Project Scooter](https://AlexT899.github.io/test_drive/index.html "Scooter")
 
-[Project Clothing Store](https://AlexT899.github.io/clothin-stores/HomePage.html "Clothing_Store")
+[Project Clothing Store](https://AlexT899.github.io/clothin-stores/HomePage.html"Clothing_Store")
