@@ -5,6 +5,7 @@ My Works
 
 
 
+
 [Project Alliance](https://AlexT899.github.io/Внутренняя_страница_сайта/index.html "Внутренняя_страница_сайта")
 
 [Project Alliance-PHP-settings](https://AlexT899.github.io/Alliance/index.php "Настройка PHP")
@@ -17,3 +18,5 @@ My Works
 
 
 [Project Furniro](https://AlexT899.github.io/Furniro/index.html "Furniro")
+
+[Project Furniro](AlexT899.github.io/JavaScript_lessons/index.html)
