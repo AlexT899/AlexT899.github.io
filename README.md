@@ -19,4 +19,4 @@ My Works
 
 [Project Furniro](https://AlexT899.github.io/Furniro/index.html "Furniro")
 
-[Project Furniro](AlexT899.github.io/JavaScript_lessons/index.html)
+[Project Maslo](AlexT899.github.io/JavaScript_lessons/index.html)
