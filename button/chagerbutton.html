@@ -11,7 +11,7 @@
     <script>
       let button = document.getElementById("button");
       let image = document.getElementById("image");
-      button.ondblclick = function () {
+      button.addEventListener("dblclick", function () {
         if (image.style.display === "none") {
           image.style.display = "block";
         } else {
