@@ -18,7 +18,7 @@ My Works
 
 [Project Maslo](https://AlexT899.github.io/JavaScript_lessons/index.html)
 
-[Project Summa](https://AlexT899.github.io/summa/summa.html)
+[Project Summa](https://AlexT899.github.io/button/index.html)
 
-[Project Hide_Show](https://AlexT899.github.io/button/index.html)
+[Project Hide_Show](https://)
 
