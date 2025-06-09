@@ -1,8 +1,6 @@
 # Alex Tarvids
 My Works
 
-
-
 [Project Alliance](https://AlexT899.github.io/Внутренняя_страница_сайта/index.html "Внутренняя_страница_сайта")
 
 [Project Alliance-PHP-settings](https://AlexT899.github.io/Alliance/index.php "Настройка PHP")
@@ -19,9 +17,5 @@ My Works
 [Project Maslo](https://AlexT899.github.io/JavaScript_lessons/index.html)
 
 [Project Summa](https://AlexT899.github.io/summa/summa.html)
-
-[Project Hide_Show](https://AlexT899.github.io/show_hide/show.html)
-
-[Practice 10](https://AlexT899.github.io/my_practice10/index.html)
 
 [Project Fuits and Button Color Change](https://AlexT899.github.io/changeEffect/fruitchange.html)
