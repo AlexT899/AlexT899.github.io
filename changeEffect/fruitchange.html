@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button push effect</title>
+  </head>
+  <body>
+    <button id="button" onclick="choseFruit()">Choose element</button>
+    <p id="text">Selected element</p>
+    <p id="text1">Mouse amount of clicks:</p>
+    <p id="text2">Times of change color:</p>
+    <script>
+      let countClick = 0;
+      let changeColorTimes = 0;
+      let changeFruits = document.getElementById("button");
+      let fruitElement = document.getElementById("text");
+      let mouseClick = document.getElementById("text1");
+      let colorChange = document.getElementById("text2");
+
+      function choseFruit() {
+        let fruits = ["Apple", "Banana", "Mango", "Watermelon", "Kiwi"];
+        let randomFruit = fruits[Math.floor(Math.random() * fruits.length)];
+        document.getElementById(
+          "text"
+        ).innerHTML = `Selected element: ${randomFruit}`;
+      }
+      changeFruits.addEventListener("click", function () {
+        countClick++;
+        document.getElementById(
+          "text1"
+        ).innerHTML = `Mouse amount of clicks: ${countClick}`;
+      }); // Сделать смену цвета кнопки при нажати на клавишу
+      document.addEventListener("keydown", function () {
+        console.log(event.key);
+        if (event.key == "f") {
+          let color = ["red", "green", "yellow", "cyan", "orange", "blue"];
+          let randomColor = color[Math.floor(Math.random() * color.length)];
+          changeColorTimes++;
+          button.style.backgroundColor = randomColor;
+          document.getElementById(
+            "text2"
+          ).innerHTML = `Times of change color: ${changeColorTimes}`;
+        }
+      });
+    </script>
+  </body>
+</html>
