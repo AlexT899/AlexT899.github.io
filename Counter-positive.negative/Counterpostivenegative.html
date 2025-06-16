@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/Counterpositive.css" />
+    <title>Счетчик позитивных негативных чисел</title>
+  </head>
+  <body>
+    <h1>Enter Digits For Analsis:</h1>
+    <p>
+      Digits:
+      <input class="input" id="digits" type="number" />
+    </p>
+    <input
+      class="addbutton"
+      id="addButton"
+      type="button"
+      value="Add"
+      onclick="addDigits()"
+    />
+    <input
+      class="analyzebutton"
+      id="analyzeButton"
+      type="button"
+      value="Analyze"
+      onclick="analyzeNumber()"
+    />
+    <input
+      class="clear"
+      id="clearBtn"
+      type="button"
+      value="Clear"
+      onclick="clearBtn()"
+    />
+    <h1>Current Array Of Digits:</h1>
+    <div id="allDigits"></div>
+    <h1>Results of Analysis:</h1>
+    <div id="allAnalysis"></div>
+    <script>
+      let arrDigits = [];
+      function addDigits() {
+        let digits = parseInt(document.getElementById("digits").value);
+        arrDigits.push(digits);
+        document.getElementById("allDigits").innerHTML +=
+          "<li>" + digits + "</li>";
+      }
+      function analyzeNumber() {
+        let positiveDigits = 0;
+        let negativeDigits = 0;
+        let zeroDigits = 0;
+        for (let i = 0; i < arrDigits.length; i++) {
+          if (arrDigits[i] > 0) {
+            positiveDigits++;
+          } else if (arrDigits[i] < 0) {
+            negativeDigits++;
+          } else {
+            zeroDigits++;
+          }
+          document.getElementById(
+            "allAnalysis"
+          ).innerHTML = `Positive digits: ${positiveDigits}, Negative digits: ${negativeDigits}, Zero digits: ${zeroDigits}`;
+        }
+      }
+      function clearBtn() {
+        document.getElementById("digits").value = "";
+        document.getElementById("allDigits").innerHTML = "";
+        document.getElementById("allAnalysis").innerHTML = "";
+      }
+    </script>
+  </body>
+</html>
