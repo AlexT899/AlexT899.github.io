@@ -11,7 +11,6 @@ My Works
 
 [Project Clothing Store](https://AlexT899.github.io/clothin-stores/HomePage.html "Clothing_Store")
 
-
 [Project Furniro](https://AlexT899.github.io/Furniro/index.html "Furniro")
 
 [Project Maslo](https://AlexT899.github.io/JavaScript_lessons/index.html)
@@ -19,3 +18,5 @@ My Works
 [Project Summa](https://AlexT899.github.io/summa/summa.html)
 
 [Project Fuits and Button Color Change](https://AlexT899.github.io/changeEffect/fruitchange.html)
+
+[Project Positive/Negative Counter](https://AlexT899.github.io/Counter-positive.negative/Counterpostivenegative.html)
