@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="button" onclick="button()">Click on me</button>
+    <div id="click"></div>
+    <script>
+      let clickCount = 0; // в таких случаях переменую помещать за функцией
+      function button() {
+        clickCount++;
+        document.getElementById("click").innerHTML = `Кликов: ${clickCount}`;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Переключение режимов отображения</title>
+    <style>
+      .day-mode {
+        background-color: #fff;
+        color: #000;
+      }
+      .night-mode {
+        background-color: #000;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body class="day-mode">
+    <button id="toggleButton">Переключить режим</button>
+
+    <script>
+      let toggleButton = document.getElementById("toggleButton");
+      toggleButton.addEventListener("click", function () {
+        document.body.classList.toggle("day-mode");
+        document.body.classList.toggle("night-mode");
+      });
+    </script>
+  </body>
+</html>

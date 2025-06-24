@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nickanme Generator</title>
+  </head>
+  <body>
+    <input id="name" type="text" placeholder="Enter your name" />
+    <input id="word" type="text" placeholder="Your favourite word" />
+    <input id="digits" type="number" placeholder="Nickanme length" />
+    <p>Include numbers:<input id="inclNumbers" type="checkbox" /></p>
+    <p>Include Special Characters:<input id="spChar" type="checkbox" /></p>
+    <input
+      type="button"
+      value="Generate Nickname"
+      onclick="generateNickname()"
+    />
+    <div id="nickname"></div>
+    <script>
+      function generateNickname() {
+        let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let numbers = "0123456789";
+        let symbols = "!@#$%^&*";
+        let includeNumbers = document.getElementById("inclNumbers").checked;
+        let specialChar = document.getElementById("spChar").checked;
+        let name = document.getElementById("name").value || "Username";
+        let word = document.getElementById("word").value || "House";
+        let digits = document.getElementById("digits").value || 12;
+        let randomNickname = "";
+        let name2 = name.substring(0, 3);
+        let word2 = word.substring(0, 3);
+        let all = name2 + word2 + digits;
+
+        console.log(all);
+        if (includeNumbers) {
+          charset += numbers;
+        }
+        if (specialChar) {
+          charset += symbols;
+        }
+        console.log(charset);
+        for (let i = 0; i < digits; i++) {
+          randomNickname += all[Math.floor(Math.random() * all.length)];
+        }
+        randomNickname = name2 + word2 + randomNickname;
+        randomNickname = randomNickname.substring(0, digits);
+        console.log(randomNickname);
+      }
+    </script>
+  </body>
+</html>

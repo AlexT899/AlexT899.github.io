@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div><input id="one" type="text" /></div>
+    <div><input id="two" type="text" /></div>
+    <div id="results"></div>
+    <div id="three">
+      <input type="button" value="Calculate +" onclick="calculatePlus()" />
+    </div>
+    <div id="four">
+      <input type="button" value="Calculate -" onclick="calculateMinus()" />
+    </div>
+    <div id="five">
+      <input type="button" value="Calculate *" onclick="calculateMultiple()" />
+    </div>
+    <div id="six">
+      <input type="button" value="Calculate /" onclick="calculateDivide()" />
+    </div>
+    <div id="seven">
+      <input type="button" value="Clear" onclick="calculateClear()" />
+    </div>
+    <script>
+      function calculatePlus() {
+        let plus = parseInt(document.getElementById("one").value);
+        let plus2 = parseInt(document.getElementById("two").value);
+        let result = plus + plus2;
+        document.getElementById("results").innerHTML = result;
+      }
+      function calculateMinus() {
+        let minus = parseInt(document.getElementById("one").value);
+        let minus2 = parseInt(document.getElementById("two").value);
+        let result = minus - minus2;
+        document.getElementById("results").innerHTML = result;
+      }
+      function calculateMultiple() {
+        let multiple = parseInt(document.getElementById("one").value);
+        let multiple2 = parseInt(document.getElementById("two").value);
+        let result = multiple * multiple2;
+        document.getElementById("results").innerHTML = result;
+      }
+      function calculateDivide() {
+        let divide = parseInt(document.getElementById("one").value);
+        let divide2 = parseInt(document.getElementById("two").value);
+        let result = divide / divide2;
+        document.getElementById("results").innerHTML = result;
+      }
+      function calculateClear() {
+        document.getElementById("one").value = "";
+        document.getElementById("two").value = "";
+        document.getElementById("results").innerHTML = "";
+      }
+    </script>
+  </body>
+</html>

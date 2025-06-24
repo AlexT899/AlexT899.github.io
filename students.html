@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/students.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="studentsMarks">
+      <h1>Введите оценки студентов:</h1>
+      <div>
+        <p>Оценка:</p>
+        <input class="number" id="number" type="number" />
+        <input
+          class="add-buttons"
+          id="add-button"
+          type="button"
+          value="Добавить"
+          onclick="addMarks()"
+        />
+        <input
+          class="check-buttons"
+          id="check-button"
+          type="button"
+          value="Проверить успеваемость"
+          onclick="checkMarks()"
+        />
+        <input
+          class="clear"
+          id="clear"
+          type="button"
+          value="Очистить"
+          onclick="clearMarks()"
+        />
+      </div>
+      <h2 id="studentsMarks"></h2>
+      <div class="results" id="results"></div>
+      <h3 id="studentsResults"></h3>
+    </div>
+    <script>
+      let stMarks = [];
+      function addMarks() {
+        let marks = parseInt(document.getElementById("number").value);
+        stMarks.push(marks);
+        console.log(marks);
+        document.getElementById("studentsMarks").innerHTML +=
+          "<li>" + marks + "</li>"; // можно добавить любой html tag
+      }
+      function checkMarks() {
+        // let marks = document.getElementById("number").value;
+        let markSum = 0;
+        let averageMarks = 0;
+        for (let i = 0; i < stMarks.length; i++) {
+          markSum += stMarks[i];
+          averageMarks = markSum / stMarks.length;
+        }
+        // console.log(marks);
+        if (averageMarks < 60) {
+          document.getElementById(
+            "studentsResults"
+          ).innerHTML = `Студент не справился`;
+        } else {
+          document.getElementById(
+            "studentsResults"
+          ).innerHTML = `Студент справился хорошо`;
+        }
+        document.getElementById(
+          "results"
+        ).innerHTML = `Средний балл студента:  ${averageMarks}`;
+
+        // console.log(averageMarks);
+      }
+      function clearMarks() {
+        document.getElementById("studentsMarks").innerHTML = "";
+        document.getElementById("results").innerHTML = "";
+        document.getElementById("number").value = "";
+        document.getElementById("studentsResults").innerHTML = "";
+      }
+    </script>
+  </body>
+</html>

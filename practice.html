@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <div>Enter your name:<input id="one" type="text" /></div>
+    <div>Enter your age:<input id="two" type="text" /></div>
+    <div id="three">
+      <input type="button" value="Greet Me" onclick="greetMe();" />
+    </div>
+    <script>
+      function greetMe() {
+        let error = "Please enter digit";
+        let fullName = document.getElementById("one").value;
+        let age = document.getElementById("two").value;
+        let message = `Hello, ${fullName}! You are ${age} years old. Welcome to our website.`;
+        //document.getElementById('three').innerHTML=message;
+        if (fullName !== "" && age !== "") {
+          document.getElementById("three").innerHTML = message;
+        } else {
+          alert(error);
+        }
+      }
+    </script>
+  </body>
+</html>

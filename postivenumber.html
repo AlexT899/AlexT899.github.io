@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="possitive.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>Введите числа для проверки</h1>
+      <p>Число:</p>
+      <input class="number" id="number" type="number" />
+      <input
+        class="button"
+        id="button"
+        type="button"
+        value="Проверить"
+        onclick="checkNumber()"
+      />
+      <h2>Результат проверки:</h2>
+      <h3 id="results"></h3>
+    </div>
+    <script>
+      function checkNumber() {
+        let postiveNumber = document.getElementById("number").value;
+        if (postiveNumber < 0) {
+          document.getElementById("results").innerHTML = `Число отрицательное`;
+        } else {
+          document.getElementById("results").innerHTML = `Число положительное`;
+        }
+      }
+    </script>
+  </body>
+</html>

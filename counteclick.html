@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Счетчик кликов</title>
+  </head>
+  <body>
+    <button id="myButton">Кликни меня</button>
+
+    <script>
+      let button = document.getElementById("myButton");
+      let clickCount = 0;
+      button.addEventListener("click", function () {
+        clickCount++;
+        button.textContent = "Кликов: " + clickCount;
+      });
+    </script>
+  </body>
+</html>

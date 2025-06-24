@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/checkNumber.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="number-check">
+      <div>
+        <h1>Введите текст для проверки:</h1>
+      </div>
+      <div>
+        <p>Число:</p>
+        <input class="input-num" id="one" type="number" />
+        <input
+          class="button"
+          id="button"
+          type="button"
+          value="Проверить"
+          onclick="checkNumber()"
+        />
+      </div>
+      <div><h2 id="resultCheck">Результат проверки:</h2></div>
+    </div>
+    <script>
+      function checkNumber() {
+        let number = document.getElementById("one").value;
+        console.log(number);
+        if (number < 0) {
+          document.getElementById(
+            "resultCheck"
+          ).innerHTML = `Число отрицательное: ${number}`;
+        } else {
+          document.getElementById(
+            "resultCheck"
+          ).innerHTML = `Число положительное: ${number}`;
+        }
+      }
+    </script>
+  </body>
+</html>

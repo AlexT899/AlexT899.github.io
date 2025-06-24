@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouseover effect</title>
+    <style>
+      .square {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="square" class="square"></div>
+    <script>
+      let square = document.getElementById("square");
+      square.addEventListener("mouseenter", function () {
+        square.style.backgroundColor = "black";
+      });
+      square.addEventListener("mouseleave", function () {
+        square.style.backgroundColor = "red";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Увеличить/Уменьшить</title>
+  </head>
+  <body>
+    <input id="one" type="number" />
+    <input id="button" type="button" value="Увеличить" onclick="countUp()" />
+    <input id="button1" type="button" value="Уменьшить" onclick="countDown()" />
+    <div id="results"></div>
+    <script>
+      let counter = 0;
+      let button = document.getElementById("button");
+      let button1 = document.getElementById("button1");
+      let results = document.getElementById("results");
+      function countUp() {
+        counter++;
+        document.getElementById(
+          "results"
+        ).innerHTML = `Число увеличилось: ${counter}`;
+      }
+      function countDown() {
+        counter--;
+        document.getElementById(
+          "results"
+        ).innerHTML = `Число уменьшилось: ${counter}`;
+      }
+    </script>
+  </body>
+</html>

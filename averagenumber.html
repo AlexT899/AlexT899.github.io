@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Среднее арифметическое</title>
+  </head>
+  <body>
+    <h1>Число:</h1>
+    <input id="digits" type="number" />
+    <input
+      id="addbutton"
+      type="button"
+      value="Добавить"
+      onclick="addNumber()"
+    />
+    <input
+      id="avrbutton"
+      type="button"
+      value="Вычислить среднее"
+      onclick="averageNumber()"
+    />
+    <h1>Текущий массив чисел:</h1>
+    <div id="allDigits"></div>
+    <h1>Среднее арифметическое:</h1>
+    <div id="avrDigits"></div>
+    <script>
+      let arrNumbers = [];
+      function addNumber() {
+        let numbers = parseInt(document.getElementById("digits").value);
+        arrNumbers.push(numbers);
+        document.getElementById("allDigits").innerHTML +=
+          "<li>" + numbers + "</li>";
+      }
+      function averageNumber() {
+        let sum = 0;
+        let average = 0;
+        for (let i = 0; i < arrNumbers.length; i++) {
+          sum = sum + arrNumbers[i];
+          average = sum / arrNumbers.length;
+        }
+        document.getElementById("avrDigits").innerHTML = average;
+      }
+    </script>
+  </body>
+</html>
