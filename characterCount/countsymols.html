@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/countsymbol.css" />
+    <title>Count Symbols Length</title>
+  </head>
+  <body>
+    <div>
+      <input
+        class="allCounter"
+        type="button"
+        value="Character Counter"
+        id="allCounter"
+        onclick="showForm()"
+      />
+    </div>
+    <div id="form" class="allForm">
+      <div class="main-text">
+        <h1>Character Counter</h1>
+      </div>
+      <div class="text-area">
+        <textarea
+          name=""
+          id="symbolCount"
+          placeholder="Enter your text here..."
+        ></textarea>
+      </div>
+      <div class="input-btn">
+        <input
+          class="charBtn"
+          type="button"
+          value="Count Characters"
+          id="charBtn"
+          onclick="charactersCount()"
+        />
+        <input
+          class="btnClear"
+          type="button"
+          value="Clear Text"
+          id="btnClear"
+          onclick="clearBtn()"
+        />
+      </div>
+      <div class="results-text" id="results"></div>
+      <div class="results-text" id="resultsEng"></div>
+      <div class="results-text" id="resultsEsp"></div>
+      <div class="results-text" id="resultsChn"></div>
+      <div class="hide-counter">
+        <input
+          class="hideCounter"
+          type="button"
+          value="Hide Character Counter"
+          id="hideCounter"
+          onclick="hideForm()"
+        />
+      </div>
+    </div>
+    <script>
+      let allForm = document.getElementById("form");
+      let hide = document.getElementById("hideCounter");
+      function charactersCount() {
+        let text = document.getElementById("symbolCount").value;
+        console.log(text.length);
+
+        document.getElementById(
+          "results"
+        ).innerHTML = `Количество символов: ${text.length}`;
+        document.getElementById(
+          "resultsEng"
+        ).innerHTML = `Number of characters: ${text.length}`;
+        document.getElementById(
+          "resultsEsp"
+        ).innerHTML = `Número de caracteres: ${text.length}`;
+        document.getElementById(
+          "resultsChn"
+        ).innerHTML = `字元數: ${text.length}`;
+      }
+      function clearBtn() {
+        document.getElementById("symbolCount").value = "";
+      }
+      function showForm() {
+        let show = document.getElementById("allCounter");
+        allForm.style.display = "block";
+        show.style.display = "none";
+        hide.style.display = "block";
+      }
+      function hideForm() {
+        window.location.reload();
+        allForm.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
