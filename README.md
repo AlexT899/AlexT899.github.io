@@ -20,3 +20,5 @@ My Works
 [Project Fuits and Button Color Change](https://AlexT899.github.io/changeEffect/fruitchange.html)
 
 [Project Positive/Negative Counter](https://AlexT899.github.io/Counter-positive.negative/Counterpostivenegative.html)
+
+[Project Character Counter](https://AlexT899.github.io/characterCount/countsymols.html)
