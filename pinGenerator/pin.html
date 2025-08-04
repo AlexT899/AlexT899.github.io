@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/pin.css" />
+    <title>Generate Your Pincode</title>
+  </head>
+  <body>
+    <div class="pin">
+      <h1>Generate your pin</h1>
+    </div>
+    <div class="input">
+      <input
+        class="input-btn"
+        type="button"
+        id="genPin"
+        value="Generate Pin"
+        onclick="generatePin()"
+      />
+    </div>
+    <div class="results" id="result"></div>
+    <div class="input-clear">
+      <input
+        class="btn-clear"
+        id="btnClear"
+        type="button"
+        value="Clear"
+        onclick="clearBtn()"
+      />
+    </div>
+    <script>
+      let btnClear = document.getElementById("btnClear");
+      function generatePin() {
+        let pin = "";
+        for (let i = 0; i < 4; i++) {
+          pin += Math.floor(Math.random() * 9);
+          document.getElementById("result").textContent = `Your Pin: ${pin}`;
+          document.getElementById("result").style.border = "2px solid green";
+          document.getElementById("result").style.backdropFilter = "blur(5px)";
+          btnClear.style.display = "block";
+        }
+      }
+      function clearBtn() {
+        window.location.reload();
+        document.getElementById("result").textContent = "";
+        btnClear.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
