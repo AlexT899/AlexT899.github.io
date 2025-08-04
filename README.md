@@ -22,3 +22,5 @@ My Works
 [Project Positive/Negative Counter](https://AlexT899.github.io/Counter-positive.negative/Counterpostivenegative.html)
 
 [Project Character Counter](https://AlexT899.github.io/characterCount/countsymols.html)
+
+[Project Pin Generator](https://AlexT899.github.io/pinGenerator/pin.html)
