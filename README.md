@@ -24,3 +24,5 @@ My Works
 [Project Character Counter](https://AlexT899.github.io/characterCount/countsymols.html)
 
 [Project Pin Generator](https://AlexT899.github.io/pinGenerator/pin.html)
+
+[Project Quiz Game](https://AlexT899.github.io/Quiz/quiz.html)
