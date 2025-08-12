@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/quiz.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="main-quiz">
+      <div class="header-text">
+        <h1>Complete Quiz</h1>
+      </div>
+      <div class="header-quiz">
+        <div class="main-questions">
+          <h2>Question 1: Capital of France?</h2>
+          <input
+            id="madrid"
+            class="input-asnwers"
+            type="radio"
+            name="q1"
+            value="incorrect"
+          />
+          <label class="madrid" for="madrid">Madrid</label>
+          <input
+            id="paris"
+            class="input-asnwers"
+            type="radio"
+            name="q1"
+            value="correct"
+          />
+          <label for="paris">Paris</label>
+          <input
+            id="brussels"
+            class="input-asnwers"
+            type="radio"
+            name="q1"
+            value="incorrect"
+          />
+          <label for="brussels">Brussels</label>
+          <h2>Question 2: Most Popular German car model?</h2>
+          <input
+            id="seat"
+            class="input-asnwers"
+            type="radio"
+            name="q2"
+            value="incorrect	"
+          />
+          <label for="seat">Seat</label>
+          <input
+            id="suzuki"
+            class="input-asnwers"
+            type="radio"
+            name="q2"
+            value="incorrect"
+          />
+          <label for="suzuki">Suzuki</label>
+          <input
+            id="bmw"
+            class="input-asnwers"
+            type="radio"
+            name="q2"
+            value="correct"
+          />
+          <label for="bmw">BMW</label>
+          <h2>Question 3: What CSS standing for?</h2>
+          <input
+            id="quizQ7"
+            class="input-asnwers"
+            type="radio"
+            name="q3"
+            value="incorrect"
+          />
+          <label for="quizQ7">Computer Style Sheets</label>
+          <input
+            id="quizQ8"
+            class="input-asnwers"
+            type="radio"
+            name="q3"
+            value="correct"
+          />
+          <label for="quizQ8">Cascading Style Sheets</label>
+          <input
+            id="quizQ9"
+            class="input-asnwers"
+            type="radio"
+            name="q3"
+            value="incorrect"
+          />
+          <label for="quizQ9">Colorful Style Sheets</label>
+        </div>
+      </div>
+      <div class="check-button">
+        <input
+          class="check-btn"
+          type="button"
+          value="Check answers"
+          onclick="checkAnswer()"
+        />
+      </div>
+      <div class="check-button">
+        <input
+          class="clear-btn"
+          type="button"
+          value="Clear"
+          onclick="clearBtn()"
+        />
+      </div>
+      <div class="results" id="results"></div>
+    </div>
+    <script>
+      function checkAnswer() {
+        let correct = 0;
+        let totalQuestions = 3;
+        let divResults = document.getElementById("results");
+        let q1Answers = document.querySelector('input[name="q1"]:checked');
+        let q2Answers = document.querySelector('input[name="q2"]:checked');
+        let q3Answers = document.querySelector('input[name="q3"]:checked');
+        if (!q1Answers && !q2Answers && !q3Answers) {
+          divResults.textContent = "Please answer all questions!";
+          divResults.style.color = "red";
+          return;
+        }
+        if (q1Answers.value == "correct") {
+          correct++;
+          divResults.style.color = "green";
+        }
+        if (q2Answers.value == "correct") {
+          correct++;
+          divResults.style.color = "green";
+        }
+        if (q3Answers.value == "correct") {
+          correct++;
+          divResults.style.color = "green";
+        }
+
+        if (correct == 0) {
+          divResults.textContent = "0 Correct answers,Try Again!";
+          divResults.style.color = "red";
+        } else if (correct == 1) {
+          divResults.textContent = `${correct} from ${totalQuestions} questions correct`;
+          divResults.style.color = "red";
+        } else if (correct == 2) {
+          divResults.textContent = `${correct} from ${totalQuestions} questions correct`;
+          divResults.style.color = "orangered";
+        } else if (correct == 3) {
+          divResults.textContent = `${correct} from ${totalQuestions} questions correct`;
+          divResults.style.color = "green";
+        }
+      }
+      function clearBtn() {
+        // Снимаем все выбранные radio
+        document.querySelectorAll('input[type="radio"]').forEach((radio) => {
+          radio.checked = false;
+        });
+        document.getElementById("results").textContent = "";
+      }
+    </script>
+  </body>
+</html>

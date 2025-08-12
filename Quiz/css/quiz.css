@@ -1,0 +1,59 @@
+body {
+  font-family: "Playfair Display", sans-serif;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-55%, -150%);
+  background-image: url(../img/quiz.jpeg);
+  background-size: cover;
+}
+.main-quiz {
+  border: 2px solid salmon;
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(100px);
+}
+.header-quiz {
+  display: flex;
+  columns: 2;
+  text-align: center;
+  justify-content: center;
+}
+.header-text {
+  display: flex;
+  justify-content: center;
+}
+.check-button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.check-btn,
+.clear-btn {
+  height: 40px;
+  width: 30%;
+  margin-top: 20px;
+  background-color: salmon;
+  color: #333;
+  border: none;
+  border-radius: 40px;
+}
+.results {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+  font-size: 20px;
+}
+.correct-answer {
+  background-color: #c8f7c5; /* светло-зелёный */
+  border-radius: 5px;
+  padding: 2px 4px;
+}
+.wrong-answer {
+  background-color: #f7c5c5; /* светло-красный */
+  border-radius: 5px;
+  padding: 2px 4px;
+}
